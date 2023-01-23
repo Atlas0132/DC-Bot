@@ -1,0 +1,98 @@
+{
+  "name": "a0003lia/masqureade",
+  "timeout": 10000,
+  "connector": false,
+  "events": {
+    "functions/events/discord/message/Commands.js": {
+      "name": "discord.message.create"
+    },
+    "functions/events/discord/bot_mention.js": {
+      "name": "discord.bot_mention"
+    },
+    "functions/events/discord/message/Ban.js": {
+      "name": "discord.message.create"
+    },
+    "functions/events/autocode/self/Clear.js": {
+      "name": "autocode.self.deployed"
+    },
+    "functions/events/discord/message/Embed_Template.js": {
+      "name": "discord.message.create"
+    },
+    "functions/events/scheduler/Reminder.js": {
+      "name": "scheduler.monthly",
+      "subtype": {
+        "day": "1",
+        "time": "10:30 (10:30am)",
+        "timezone": "Pacific — Marquesas, PF (-09:30)"
+      }
+    },
+    "functions/events/discord/message/Giveaway.js": {
+      "name": "discord.message.create"
+    },
+    "functions/events/discord/message/Unban.js": {
+      "name": "discord.message.create"
+    },
+    "functions/events/discord/message/Ismail-cevap-vericisi.js": {
+      "name": "discord.message.create"
+    },
+    "functions/events/discord/message/reaction/remove.js": {
+      "name": "discord.message.reaction.remove"
+    },
+    "functions/events/discord/message/reaction/add.js": {
+      "name": "discord.message.reaction.add"
+    },
+    "functions/events/discord/message/tokat.js": {
+      "name": "discord.message.create"
+    },
+    "functions/events/discord/message/suggest.js": {
+      "name": "discord.message.create"
+    },
+    "functions/events/discord/message/levelsyst.js": {
+      "name": "discord.message.create"
+    },
+    "functions/events/discord/command/zar.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "zar"
+      }
+    },
+    "functions/events/discord/command/kim.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "kim"
+      }
+    },
+    "functions/events/discord/command/konuver.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "konuver"
+      }
+    },
+    "functions/events/discord/command/bilgi.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "bilgi"
+      }
+    },
+    "functions/events/discord/command/guvenlik.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "guvenlik"
+      }
+    }
+  },
+  "env": [
+    {
+      "name": "PREFIX",
+      "description": "The Prefix for your bot"
+    },
+    {
+      "name": "UNWANTED_WORDS",
+      "description": "If the user uses this word in their message, they will not earn any points. Seperate each word with a comma and a space."
+    },
+    {
+      "name": "LEVEL_ROLE_IDS",
+      "description": "The bot automatically assigns roles to people if they reach level 10, 25 or 50. Enter (in ascending order) the IDs of the roles you would like to assign (seperated by a comma and a space, like this: ', ')."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "masqureade",
+  "author": "R3al Drout <diamondhearthedman@gmail.com>",
+  "publish": false,
+  "dependencies": {
+    "lib": "latest",
+    "discord.js": "^13.5.0",
+    "quick.db": "^7.1.3",
+    "autocode-discordjs": "^1.1.0",
+    "axios": "^0.24.0"
+  }
+}
